@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía ATB HAP/VAP · IDSA 2024</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=EivSVgYkZZ3Y0u8NcQtbFXbezATL8Btzwju6cbDqsLuVeB2vyX0DL-_3r7JrKI0-gdaDJ9FTp24lXJTjtJLhRxA_mOYnMTGSWPx3YiCzvgc7vvgAT9f6uGUH7Xc747y8V0oETNEVI36qrIcArIzAOlvM2lwDBvQiXDf0QeI6iuBKgtuTfgfmr3zZrH6Z-PwOnFaHLj7mrpZrIAj_aRYSMDAr2TYrSKzvxDWrRwoT6UhfnisN4fMhae4h-YgAIHPUL1j_VS5LSVh3970swp-t7BhUPz-EcgT3TfttfJUcso8fL00yCm0yf2AtzqUQBXDxHgQlFUlhjZU-NU8w3kiuH-qlILOVovBz3Nmedu1XELaTG8aM4nncNY5xenP94-NAugrqP-PNddWg3rXH5bkCS_9Nv7Iunz7M4N3yXuZZ2SR5G8e3KchTLX8ts_IpHot-6FpMDvLfnWp4DpTicoPdcnqMsCBkeGL5ZLQAKl9hSv_mBGeTFom36G6AhT9qc9Z1QBuVuWsT1cpshpBs-EZ8chvS3PzFMRTZfMHkmMX-prRltT4dqcSCwL3dBfNptT5iWxFz6WVp5frcjYeA47cd6fn18G1xnXmu4ghILK1wmt9rbH0vHUBsgYs28-b0D44_amFdkbEiUcMBqN3pJhp5wwaYPQeBuy_5nz5PnyNp_xDCEorLnDblxX7MbhZJzog2lRZggbbOF9S-KVr3fGxZqM4puE1po0YimxCOMpcfMRpml5jwuQr3slEzxKagRhoyxgBArl1zkub56duZB9daH-D3dPCFB43lcTRKZJ6JrPkXLxjZe82Mi4Uq-nXJS82Plv4CTb50hNzpGe8AGVaHOQatgOeHN3qI8OYGJ_Vx-WZrZvK09BTe5mv2Q21Squsa9aK_DgxQrNntrvI8IEzN11ivLmafHzrk87PnY9DQAGZS5c1ooGLdGzvCwq0g4uzCwBKGWesw5sFgOAoa0tbyCn4NVxfplN_R9uUpYFjRk9FJzbCBfi8SJz5AFTalppm54LCM6AbcQUQgULW7eydDwxPQXM27fq7AC36RFXfvGPnNR3FHN6lNtuTNJJMrg4d6omMj_0iIK73Za9z7BbX4bSq7kcQZXxc10A1AOyaZp2JC9S8K6DKPgie8KS6tExDRqUFomtm_AOtLCzTkQp25_fZ1OEVHJEF5Aru2p1vpc1NA0G90LBS8zGAEyVWDRw5QY96-YE5EZY_xpaXIJlhyUKd33q9M_NmNJ07YMXgYPNr_WgaOenBdxLYVAOk-5yPnlvgawzjpkIQDXvJX8sRUQphwQCM21JaRk1yRhSm-CuorpCjrTOqSsLQPfUvu0z7eXNFtxAmSEThLk9PzLHdOKsteP-6TY3_SoBPEBl2nILDSkL0FBcF6ACoG7UXDmMUcGwjFVBNIsFxVL3h6w52zofM8sFkgAFsAKhxBCAODISLttlxf2BeB8hVTOpJBBgV2oYmQfNB9O4xShoDIUKZWC6n9HWid2dLfUccOZo7YHglgKrj9y2wi8QYx9l9Mpy4reLuG-7gucA_TVD94bsVu80Sd0OoXZcajmIeBFSufVq8eslA4nqRgCrR1EkZCuPGKskwjsfYMuMFygXpGEtI1XVOJORSBV3gMwMtytgwcrn4aSL_u5FeFQjAf_pHXUT-7NW0vs8TJ5iV7_o8SY5bsl2MQ2UOaOkpFSWpdjy_pBGeirnLWdWx6ILT4BkOyHgbwVb2bMDCsBbdNGzeqA6EXrjvCQht6Ph3mBB5LlY3-SN9mRlChBVe3AelK-ZA9ysJOajwOUvwzllYCliRtxbXigALm6xHpmJgtfXsK48z9AaOlH2Du8ilahfd1GUeFS-OM7pMN0J1opNXvsJiiK9nRBpfmYLyma984A17YWNOzXDI" nonce="9000e77e45b8d8740e1e24d333d48291" charset="UTF-8"></script><style>
+  :root {
+    --bg: #080c14;
+    --s1: #0e1420;
+    --s2: #141d2e;
+    --s3: #1a2540;
+    --border: #1e2d45;
+    --border2: #243452;
+    --text: #dde4f0;
+    --muted: #5a6a85;
+    --dim: #3a4a65;
+    --green: #10d98a;
+    --green-bg: #031a0e;
+    --green-bd: #0a4d28;
+    --yellow: #f0b429;
+    --yellow-bg: #1a1200;
+    --yellow-bd: #5a3d00;
+    --red: #f05252;
+    --red-bg: #1a0505;
+    --red-bd: #5a1010;
+    --blue: #4d9fff;
+    --blue-bg: #020e20;
+    --blue-bd: #0a2a5a;
+    --purple: #b06eff;
+    --purple-bg: #100520;
+    --purple-bd: #3a1060;
+    --cyan: #00d4ff;
+    --orange: #ff7a30;
+    --orange-bg: #1a0a00;
+    --orange-bd: #5a2a00;
+    --mono: 'JetBrains Mono', monospace;
+    --sans: 'Syne', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    min-height: 100vh;
+    padding: 2rem 1rem 3rem;
+  }
+
+  /* HEADER */
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .header-badge {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.2em;
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
+    padding: 0.25rem 0.8rem;
+    border-radius: 2px;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+  }
+  .header h1 {
+    font-family: var(--sans);
+    font-size: clamp(1.1rem, 3vw, 1.7rem);
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+  .header h1 span { color: var(--cyan); }
+  .header p {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+
+  /* UPDATE BADGE */
+  .update-strip {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: linear-gradient(90deg, #031a10, #020e1a);
+    border: 1px solid var(--green-bd);
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+  }
+  .update-strip .dot { width: 7px; height: 7px; background: var(--green); border-radius: 50%; flex-shrink: 0; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+  .update-strip span { color: var(--green); font-family: var(--mono); }
+  .update-strip p { color: var(--muted); font-family: var(--mono); font-size: 0.68rem; }
+
+  /* ALERT BOXES */
+  .alert {
+    border-radius: 6px;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.9rem;
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+    font-size: 0.78rem;
+    line-height: 1.6;
+    font-family: var(--mono);
+  }
+  .alert-icon { font-size: 1rem; flex-shrink: 0; }
+  .alert-red    { background: var(--red-bg);    border: 1px solid var(--red-bd);    color: #f9a8a8; }
+  .alert-yellow { background: var(--yellow-bg); border: 1px solid var(--yellow-bd); color: #fcd88a; }
+  .alert-green  { background: var(--green-bg);  border: 1px solid var(--green-bd);  color: #6ee7b7; }
+  .alert-blue   { background: var(--blue-bg);   border: 1px solid var(--blue-bd);   color: #93c5fd; }
+  .alert strong { font-weight: 600; }
+
+  /* SECTION LABEL */
+  .section-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin: 2rem 0 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* IDSA TAG */
+  .idsa-new {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 0.12rem 0.4rem;
+    border-radius: 3px;
+    background: var(--green-bg);
+    color: var(--green);
+    border: 1px solid var(--green-bd);
+    vertical-align: middle;
+    margin-left: 4px;
+  }
+  .idsa-mod {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 0.12rem 0.4rem;
+    border-radius: 3px;
+    background: var(--yellow-bg);
+    color: var(--yellow);
+    border: 1px solid var(--yellow-bd);
+    vertical-align: middle;
+    margin-left: 4px;
+  }
+  .idsa-del {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 0.12rem 0.4rem;
+    border-radius: 3px;
+    background: var(--red-bg);
+    color: var(--red);
+    border: 1px solid var(--red-bd);
+    vertical-align: middle;
+    margin-left: 4px;
+  }
+
+  /* TABLE */
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin-bottom: 1.5rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.76rem;
+    min-width: 720px;
+  }
+  thead tr { background: var(--s2); }
+  th {
+    padding: 0.7rem 0.9rem;
+    text-align: left;
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border2);
+    white-space: nowrap;
+  }
+  td {
+    padding: 0.7rem 0.9rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: rgba(255,255,255,0.018); }
+  tbody tr:nth-child(odd) td { background: rgba(255,255,255,0.012); }
+  tbody tr:nth-child(odd):hover td { background: rgba(255,255,255,0.024); }
+
+  /* GEN BADGES */
+  .gen {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 0.18rem 0.5rem;
+    border-radius: 3px;
+    margin: 0.1rem;
+    white-space: nowrap;
+    letter-spacing: 0.04em;
+  }
+  .g-kpc  { background: var(--blue-bg);   color: var(--blue);   border: 1px solid var(--blue-bd); }
+  .g-ndm  { background: var(--red-bg);    color: var(--red);    border: 1px solid var(--red-bd); }
+  .g-vim  { background: var(--orange-bg); color: var(--orange); border: 1px solid var(--orange-bd); }
+  .g-imp  { background: var(--orange-bg); color: var(--orange); border: 1px solid var(--orange-bd); }
+  .g-oxa  { background: var(--purple-bg); color: var(--purple); border: 1px solid var(--purple-bd); }
+  .g-blee { background: var(--yellow-bg); color: var(--yellow); border: 1px solid var(--yellow-bd); }
+  .g-ampc { background: #051a10;          color: #34d399;       border: 1px solid #0a4d28; }
+  .g-meca { background: #0f0520;          color: #c084fc;       border: 1px solid #3a1060; }
+  .g-van  { background: #1a0505;          color: #fca5a5;       border: 1px solid #5a1010; }
+  .g-mcr  { background: #1a1000;          color: #fcd34d;       border: 1px solid #5a3d00; }
+  .g-neg  { background: var(--green-bg);  color: var(--green);  border: 1px solid var(--green-bd); }
+  .g-intr { background: #050a20;          color: var(--cyan);   border: 1px solid #0a2050; }
+
+  /* DRUG */
+  .drug-1 { font-family: var(--mono); font-weight: 600; color: var(--green); font-size: 0.8rem; }
+  .drug-2 { font-family: var(--mono); font-size: 0.71rem; color: var(--muted); margin-top: 0.15rem; }
+  .drug-warn { font-family: var(--mono); font-size: 0.68rem; color: var(--yellow); margin-top: 0.2rem; }
+  .drug-no   { font-family: var(--mono); font-size: 0.68rem; color: var(--red);    margin-top: 0.2rem; }
+  .drug-new  { font-family: var(--mono); font-weight: 600; color: var(--cyan); font-size: 0.8rem; }
+
+  /* PILLS */
+  .pill { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 10px; font-family: var(--mono); font-size: 0.65rem; font-weight: 600; }
+  .p-green  { background: var(--green-bg);  color: var(--green);  border: 1px solid var(--green-bd); }
+  .p-yellow { background: var(--yellow-bg); color: var(--yellow); border: 1px solid var(--yellow-bd); }
+  .p-red    { background: var(--red-bg);    color: var(--red);    border: 1px solid var(--red-bd); }
+  .p-cyan   { background: var(--blue-bg);   color: var(--cyan);   border: 1px solid var(--blue-bd); }
+
+  /* BACTERIA CELL */
+  .bact { font-family: var(--mono); font-style: italic; color: var(--text); font-size: 0.76rem; }
+
+  /* MECH */
+  .mech { font-family: var(--mono); font-size: 0.7rem; color: var(--dim); line-height: 1.5; }
+
+  /* LEGEND ROW */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  .leg { display: flex; align-items: center; gap: 0.4rem; font-family: var(--mono); font-size: 0.68rem; color: var(--muted); }
+  .ldot { width: 9px; height: 9px; border-radius: 2px; flex-shrink: 0; }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+    line-height: 1.8;
+  }
+  .footer a { color: var(--cyan); text-decoration: none; }
+
+  /* STRIKETHROUGH */
+  .strike { text-decoration: line-through; opacity: 0.5; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-badge">HAP · VAP · Bacteriemia · UCI</div>
+  <h1>Guía Antibiótica <span>Gram-Negativos & Gram-Positivos</span></h1>
+  <p>BioFire FilmArray Pneumonia Panel + Blood Culture ID Panel · Actualizado IDSA AMR 2024</p>
+</div>
+
+<!-- UPDATE STRIP -->
+<div class="update-strip">
+  <div class="dot"></div>
+  <span>IDSA AMR Guidance 2024</span>
+  <p>Cambios clave: Tigeciclina eliminada de combinaciones · Sulbactam/Durlobactam = 1ª línea CRAB · Azteo/Avi aprobado FDA 2025 · Stenotrophomonas: nuevo orden de preferencia · Imipenem/Relebactam incorporado · Amp/Sulbactam: reclasificado a alternativa</p>
+</div>
+
+<!-- ALERTAS CLAVE -->
+<div class="alert alert-red">
+  <div class="alert-icon">⚠</div>
+  <div><strong>REGLA CRÍTICA — METALO-β-LACTAMASAS (NDM · VIM · IMP):</strong> Ceftazidima/Avibactam sola NO cubre metalo. Opciones: (1) Aztreonam/Avibactam FDA-aprobado 2025 · (2) Ceftaz/Avi + Aztreonam cada 8h (dosis simultánea, actualización IDSA 2024) · (3) Cefiderocol con segundo agente.</div>
+</div>
+<div class="alert alert-yellow">
+  <div class="alert-icon">⚡</div>
+  <div><strong>TIGECICLINA — ELIMINADA DE COMBINACIONES ESTÁNDAR (IDSA 2024):</strong> Removida como componente de terapia combinada de rutina. En CRAB solo puede considerarse como rescate de último recurso en combinación cuando no hay otra opción disponible. NO usar en VAP como monoterapia por niveles pulmonares insuficientes.</div>
+</div>
+<div class="alert alert-green">
+  <div class="alert-icon">✓</div>
+  <div><strong>SULBACTAM/DURLOBACTAM — PRIMERA LÍNEA CRAB (IDSA 2024):</strong> Sulbactam/Durlobactam + Meropenem o Imipenem/Cilastatina es el tratamiento preferido para CRAB. Amp/Sulbactam en dosis alta (27g/día) pasa a alternativa cuando no hay Sulbactam/Durlobactam disponible.</div>
+</div>
+<div class="alert alert-blue">
+  <div class="alert-icon">ℹ</div>
+  <div><strong>PK/PD EN VAP — SIEMPRE INFUSIÓN EXTENDIDA:</strong> Meropenem 2g c/8h inf. 3h · Ceftaz/Avi 2.5g c/8h inf. 3h · Pip/Tazo 4.5g c/6h inf. 4h · Cefepima 2g c/8h inf. 4h · Objetivo: maximizar %T&gt;CMI en parénquima pulmonar.</div>
+</div>
+
+<!-- LEGEND -->
+<div class="legend">
+  <div class="leg"><div class="ldot" style="background:#4d9fff"></div>KPC (Clase A)</div>
+  <div class="leg"><div class="ldot" style="background:#f05252"></div>NDM (Metalo B)</div>
+  <div class="leg"><div class="ldot" style="background:#ff7a30"></div>VIM/IMP (Metalo B)</div>
+  <div class="leg"><div class="ldot" style="background:#b06eff"></div>OXA-48 (Clase D)</div>
+  <div class="leg"><div class="ldot" style="background:#f0b429"></div>BLEE CTX-M</div>
+  <div class="leg"><div class="ldot" style="background:#34d399"></div>AmpC (Clase C)</div>
+  <div class="leg"><div class="ldot" style="background:#c084fc"></div>mecA/MRSA</div>
+  <div class="leg"><div class="ldot" style="background:#fca5a5"></div>vanA/B VRE</div>
+  <div class="leg"><div class="ldot" style="background:#fcd34d"></div>mcr-1 Col-R</div>
+  <div class="leg"><div class="ldot" style="background:#10d98a"></div>Sin gen R</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- TABLA 1: ENTEROBACTERIAS -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="section-label">① Enterobacterias — Klebsiella · E. coli · Enterobacter · Serratia · Proteus</div>
+<div class="table-wrap">
+<table>
+  <thead><tr>
+    <th>Patógeno</th><th>Gen BioFire</th><th>Mecanismo</th><th>1ª Línea</th><th>Alternativa</th><th>NO usar</th><th>Cobertura</th>
+  </tr></thead>
+  <tbody>
+
+    <tr>
+      <td class="bact">Klebsiella pneumoniae<br>E. coli · K. aerogenes</td>
+      <td><span class="gen g-blee">CTX-M</span></td>
+      <td class="mech">BLEE · Clase A<br>No hidroliza carbapenems<br>Prevalente en comunidad</td>
+      <td>
+        <div class="drug-1">Meropenem</div>
+        <div class="drug-2">1–2g c/8h inf. 3h</div>
+        <div class="drug-2">o Ertapenem 1g c/24h</div>
+        <div class="drug-warn">⚠ No Ertapenem si sospecha Pseudomonas</div>
+      </td>
+      <td>
+        <div class="drug-2">Ceftaz/Avi (reservar para carbapenem-R)</div>
+        <div class="drug-2">Pip/Tazo si CMI ≤ 2 y estable</div>
+        <div class="drug-2">Temocilina (no disponible MX)</div>
+      </td>
+      <td><div class="drug-no">✗ Pip/Tazo monoterapia<br>✗ C3G / Ceftriaxona</div></td>
+      <td><span class="pill p-green">✓ Buena</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Klebsiella pneumoniae<br>E. coli · K. aerogenes<br>Enterobacter spp.</td>
+      <td><span class="gen g-kpc">KPC</span></td>
+      <td class="mech">Carbapenemasa Clase A<br>Hidroliza carbapenems<br>Inhibida por Avibactam</td>
+      <td>
+        <div class="drug-1">Ceftazidima/Avibactam</div>
+        <div class="drug-2">2.5g c/8h IV inf. 3h</div>
+      </td>
+      <td>
+        <div class="drug-2">Meropenem/Vaborbactam <span class="idsa-new">IDSA 2024</span></div>
+        <div class="drug-2">Imipenem/Cilastatina/Relebactam <span class="idsa-new">IDSA 2024</span></div>
+        <div class="drug-2">± Aztreonam si BLEE coexistente</div>
+      </td>
+      <td><div class="drug-no">✗ Meropenem solo<br>✗ Ertapenem</div></td>
+      <td><span class="pill p-green">✓ Buena</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Klebsiella pneumoniae<br>E. coli · Enterobacter spp.<br>Acinetobacter baumanii</td>
+      <td><span class="gen g-ndm">NDM</span></td>
+      <td class="mech">Metalo-β-lactamasa Clase B<br>Zn-dependiente<br>Avibactam NO la inhibe</td>
+      <td>
+        <div class="drug-new">Aztreonam/Avibactam <span class="idsa-new">FDA 2025</span></div>
+        <div class="drug-2">6g/4.4g c/24h inf. continua</div>
+        <div class="drug-2">— o —</div>
+        <div class="drug-new">Ceftaz/Avi + Aztreonam <span class="idsa-mod">IDSA 2024</span></div>
+        <div class="drug-2">Ceftaz/Avi 2.5g c/8h + Azteo 2g c/8h (simultáneo)</div>
+      </td>
+      <td>
+        <div class="drug-2">Cefiderocol 2g c/8h inf. 3h<br>(con segundo agente)</div>
+      </td>
+      <td><div class="drug-no">✗ Ceftaz/Avi sola<br>✗ Cualquier carbapenem solo</div></td>
+      <td><span class="pill p-yellow">⚡ Limitada</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Pseudomonas aeruginosa<br>Enterobacter spp.</td>
+      <td><span class="gen g-vim">VIM</span> <span class="gen g-imp">IMP</span></td>
+      <td class="mech">Metalo-β-lactamasa Clase B<br>VIM más frecuente en Pseudomonas<br>IMP más en Enterobacter/Asia</td>
+      <td>
+        <div class="drug-new">Aztreonam/Avibactam <span class="idsa-new">FDA 2025</span></div>
+        <div class="drug-2">6g/4.4g c/24h inf. continua</div>
+        <div class="drug-2">— o —</div>
+        <div class="drug-new">Ceftaz/Avi + Aztreonam <span class="idsa-mod">IDSA 2024</span></div>
+      </td>
+      <td>
+        <div class="drug-2">Cefiderocol + segundo agente</div>
+        <div class="drug-2">Imipenem/Cilastatina/Relebactam<br>(solo si VIM/IMP en Enterobacter, no Pseudomonas)</div>
+      </td>
+      <td><div class="drug-no">✗ Ceftaz/Avi sola<br>✗ Carbapenems solos</div></td>
+      <td><span class="pill p-yellow">⚡ Limitada</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Klebsiella pneumoniae<br>E. coli · Enterobacter spp.</td>
+      <td><span class="gen g-kpc">KPC</span> + <span class="gen g-ndm">NDM</span></td>
+      <td class="mech">Dual: Serina + Metalo<br>Escenario XDR crítico<br>Alta mortalidad</td>
+      <td>
+        <div class="drug-new">Ceftaz/Avi + Aztreonam <span class="idsa-mod">IDSA 2024</span></div>
+        <div class="drug-2">Avibactam protege Azteo de KPC</div>
+        <div class="drug-2">Azteo no hidrolizado por NDM</div>
+        <div class="drug-2">— o —</div>
+        <div class="drug-new">Aztreonam/Avibactam <span class="idsa-new">FDA 2025</span></div>
+      </td>
+      <td>
+        <div class="drug-2">Cefiderocol + segundo agente</div>
+      </td>
+      <td><div class="drug-no">✗ Ningún β-lactámico solo<br>✗ Meropenem como monoterapia</div></td>
+      <td><span class="pill p-red">✗ Muy difícil</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Klebsiella pneumoniae<br>E. coli · Enterobacter spp.</td>
+      <td><span class="gen g-oxa">OXA-48-like</span></td>
+      <td class="mech">Carbapenemasa Clase D<br>Hidrólisis parcial carbapenems<br>Frecuente en Mediterráneo/Turquía</td>
+      <td>
+        <div class="drug-1">Ceftazidima/Avibactam</div>
+        <div class="drug-2">2.5g c/8h IV inf. 3h</div>
+      </td>
+      <td>
+        <div class="drug-2">Aztreonam/Avibactam <span class="idsa-new">FDA 2025</span></div>
+        <div class="drug-2">Meropenem/Vaborbactam (cobertura OXA-48 menor)</div>
+      </td>
+      <td><div class="drug-no">✗ Ertapenem<br>✗ Meropenem solo</div></td>
+      <td><span class="pill p-green">✓ Buena</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Enterobacter cloacae<br>Serratia marcescens<br>Citrobacter freundii</td>
+      <td><span class="gen g-ampc">AmpC</span></td>
+      <td class="mech">β-lactamasa Clase C<br>Inducible por β-lactámicos<br>No inhibida por clavulanato</td>
+      <td>
+        <div class="drug-1">Cefepima 2g c/8h inf. 4h</div>
+        <div class="drug-2">o Meropenem si CMI elevada</div>
+      </td>
+      <td>
+        <div class="drug-2">Ceftaz/Avi (si resistencia adicional)</div>
+        <div class="drug-2">Imipenem/Cilastatina/Relebactam <span class="idsa-new">IDSA 2024</span></div>
+      </td>
+      <td><div class="drug-no">✗ C3G (inductor)<br>✗ Pip/Tazo (inductor)<br>✗ Amox/Clav</div></td>
+      <td><span class="pill p-green">✓ Buena</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Cualquier Enterobacteria</td>
+      <td><span class="gen g-neg">Sin gen R</span></td>
+      <td class="mech">Sensible · Sin carbapenemasa<br>Guiar por antibiograma<br>Desescalar con BioFire</td>
+      <td>
+        <div class="drug-1">Según antibiograma</div>
+        <div class="drug-2">Pip/Tazo · Cefepima · Meropenem</div>
+        <div class="drug-warn">⚠ BioFire permite desescalar a 24–48h</div>
+      </td>
+      <td><div class="drug-2">Reservar Ceftaz/Avi y Azteo/Avi<br>para carbapenem-resistentes</div></td>
+      <td><div class="drug-no">✗ Sobreescalar sin evidencia</div></td>
+      <td><span class="pill p-green">✓ Óptima</span></td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- TABLA 2: PSEUDOMONAS -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="section-label">② Pseudomonas aeruginosa — DTR / MDR / XDR</div>
+<div class="table-wrap">
+<table>
+  <thead><tr>
+    <th>Escenario</th><th>Gen BioFire</th><th>Mecanismo</th><th>1ª Línea</th><th>Alternativa</th><th>NO usar</th><th>Cobertura</th>
+  </tr></thead>
+  <tbody>
+
+    <tr>
+      <td class="bact">P. aeruginosa sensible</td>
+      <td><span class="gen g-neg">Sin gen R</span></td>
+      <td class="mech">Sensible a carbapenems<br>y β-lactámicos</td>
+      <td>
+        <div class="drug-1">Pip/Tazo 4.5g c/6h inf. 4h</div>
+        <div class="drug-2">o Cefepima 2g c/8h inf. 4h</div>
+        <div class="drug-2">o Meropenem 1g c/8h inf. 3h</div>
+      </td>
+      <td><div class="drug-2">Ciprofloxacino IV<br>Tobramicina inhalada (VAP, adyuvante)</div></td>
+      <td><div class="drug-no">✗ Ertapenem (sin cobertura Pseudo)<br>✗ Reservar nuevos agentes</div></td>
+      <td><span class="pill p-green">✓ Buena</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">P. aeruginosa MDR<br>sin metalo</td>
+      <td><span class="gen g-neg">Sin metalo</span></td>
+      <td class="mech">MDR por bombas de eflujo<br>pérdida de OprD · AmpC<br>Sin carbapenemasa MBL</td>
+      <td>
+        <div class="drug-new">Ceftolozane/Tazobactam <span class="idsa-mod">IDSA 2024 ↑</span></div>
+        <div class="drug-2">1.5g c/8h inf. 1h (HAP: 3g c/8h)</div>
+        <div class="drug-2">— o —</div>
+        <div class="drug-1">Ceftazidima/Avibactam</div>
+        <div class="drug-2">2.5g c/8h inf. 3h</div>
+      </td>
+      <td>
+        <div class="drug-2">Imipenem/Cilastatina/Relebactam <span class="idsa-new">IDSA 2024</span></div>
+        <div class="drug-2">3g/1g c/6h inf. 30min</div>
+        <div class="drug-2">Cefiderocol + segundo agente</div>
+      </td>
+      <td><div class="drug-no">✗ Meropenem solo si R<br>✗ Polimixinas sin CMI</div></td>
+      <td><span class="pill p-yellow">⚡ Moderada</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">P. aeruginosa<br>DTR con VIM/IMP</td>
+      <td><span class="gen g-vim">VIM</span> <span class="gen g-imp">IMP</span></td>
+      <td class="mech">Metalo-β-lactamasa Clase B<br>DTR: resistente a todos carbapenems<br>y la mayoría β-lactámicos</td>
+      <td>
+        <div class="drug-new">Ceftaz/Avi + Aztreonam <span class="idsa-mod">IDSA 2024</span></div>
+        <div class="drug-2">Ceftaz/Avi 2.5g c/8h + Azteo 2g c/8h</div>
+        <div class="drug-2">— o —</div>
+        <div class="drug-new">Aztreonam/Avibactam <span class="idsa-new">FDA 2025</span></div>
+      </td>
+      <td>
+        <div class="drug-2">Cefiderocol 2g c/8h inf. 3h<br>+ Aztreonam o Colistina (si mcr-1 neg)</div>
+      </td>
+      <td><div class="drug-no">✗ Ceftaz/Avi sola<br>✗ Ceftolozane/Tazo<br>✗ Imipenem/Relebactam (no cubre MBL)</div></td>
+      <td><span class="pill p-red">✗ Muy limitada</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Stenotrophomonas<br>maltophilia</td>
+      <td><span class="gen g-intr">L1 intrínseca</span></td>
+      <td class="mech">Metalo L1 intrínseca<br>R intrínseca a carbapenems<br>Nuevo orden preferencia IDSA 2024</td>
+      <td>
+        <div class="drug-new">Cefiderocol + segundo agente <span class="idsa-new">IDSA 2024 1°</span></div>
+        <div class="drug-2">— o —</div>
+        <div class="drug-new">Ceftaz/Avi + Aztreonam <span class="idsa-new">IDSA 2024 2°</span></div>
+        <div class="drug-2">— o —</div>
+        <div class="drug-2">Minociclina + segundo agente</div>
+        <div class="drug-2">TMP/SMX 15mg/kg/día + segundo agente</div>
+      </td>
+      <td>
+        <div class="drug-2">Levofloxacino + segundo agente</div>
+        <div class="drug-2">Aztreonam/Avibactam</div>
+      </td>
+      <td><div class="drug-no">✗ Carbapenems (R intrínseca)<br>✗ Ceftazidima sola (CLSI 2024 desaconseja test)<br>✗ Tigeciclina <span class="idsa-del">ELIMINADA 2024</span></div></td>
+      <td><span class="pill p-yellow">⚡ Específica</span></td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- TABLA 3: ACINETOBACTER -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="section-label">③ Acinetobacter calcoaceticus-baumannii — CRAB / Sensible</div>
+<div class="table-wrap">
+<table>
+  <thead><tr>
+    <th>Escenario</th><th>Gen BioFire</th><th>Mecanismo</th><th>1ª Línea</th><th>Alternativa</th><th>NO usar</th><th>Cobertura</th>
+  </tr></thead>
+  <tbody>
+
+    <tr>
+      <td class="bact">Acinetobacter sensible<br>(no CRAB)</td>
+      <td><span class="gen g-neg">Sin carbapenemasa</span></td>
+      <td class="mech">OXA-51 intrínseca (siempre)<br>Sin OXA adquirida<br>Sensible a carbapenems</td>
+      <td>
+        <div class="drug-1">Ampicilina/Sulbactam</div>
+        <div class="drug-2">3g c/6h IV inf. 4h</div>
+        <div class="drug-2">o Meropenem 2g c/8h inf. 3h</div>
+      </td>
+      <td><div class="drug-2">Imipenem/Cilastatina<br>Cefepima si sensible</div></td>
+      <td><div class="drug-no">✗ Ceftaz/Avi (pobre cobertura)<br>✗ Azteo/Avi (sin actividad en Acineto)</div></td>
+      <td><span class="pill p-green">✓ Buena</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Acinetobacter<br>CRAB</td>
+      <td><span class="gen g-oxa">OXA-23/40/58/48</span></td>
+      <td class="mech">OXA adquirida + intrínseca<br>R a todos carbapenems<br>XDR frecuente en UCI</td>
+      <td>
+        <div class="drug-new">Sulbactam/Durlobactam <span class="idsa-new">IDSA 2024 1°</span></div>
+        <div class="drug-2">3g/1g c/6h inf. 3h</div>
+        <div class="drug-2">+ Meropenem o Imipenem/Cilastatina</div>
+      </td>
+      <td>
+        <div class="drug-2">Cefiderocol 2g c/8h inf. 3h <span class="idsa-mod">IDSA 2024 2°</span></div>
+        <div class="drug-2">+ segundo agente al menos inicialmente</div>
+        <div class="drug-2">— si no hay Sulbactam/Durlobactam —</div>
+        <div class="drug-2">Amp/Sulbactam 27g/día <span class="idsa-mod">ALTERNATIVA 2024</span></div>
+        <div class="drug-2">(18g ampicilina + 9g sulbactam/día)<br>+ al menos otro agente</div>
+        <div class="drug-2">Polimixina B + Meropenem (si mcr-1 neg)<br>± Minociclina dosis alta (rescate)</div>
+      </td>
+      <td>
+        <div class="drug-no">✗ Meropenem solo<br>✗ Ceftaz/Avi (sin actividad CRAB)<br>✗ Azteo/Avi (sin actividad en Acineto)<br>✗ Tigeciclina en combinaciones estándar <span class="idsa-del">ELIMINADA 2024</span></div>
+      </td>
+      <td><span class="pill p-red">✗ Muy limitada</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Acinetobacter<br>PDR (pan-resistente)</td>
+      <td><span class="gen g-ndm">NDM</span> + <span class="gen g-oxa">OXA</span></td>
+      <td class="mech">Dual: MBL + OXA<br>Sin opciones estándar<br>Escenario de rescate</td>
+      <td>
+        <div class="drug-new">Cefiderocol + Sulbactam/Durlobactam <span class="idsa-new">IDSA 2024</span></div>
+        <div class="drug-2">Con carbapenem como tercer agente si posible</div>
+      </td>
+      <td>
+        <div class="drug-2">Fosfomicina IV + Colistina<br>(verificar mcr-1, recurso de rescate)</div>
+        <div class="drug-2">Rifampicina en combinación (datos limitados)</div>
+      </td>
+      <td><div class="drug-no">✗ Monoterapia con cualquier agente<br>✗ Ceftaz/Avi · Azteo/Avi (sin actividad)</div></td>
+      <td><span class="pill p-red">✗ Crítica</span></td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- TABLA 4: GRAM-POSITIVOS -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="section-label">④ Gram-Positivos — S. aureus · Enterococcus · Streptococcus</div>
+<div class="table-wrap">
+<table>
+  <thead><tr>
+    <th>Patógeno</th><th>Gen BioFire</th><th>Mecanismo</th><th>1ª Línea</th><th>Alternativa</th><th>NO usar</th><th>Cobertura</th>
+  </tr></thead>
+  <tbody>
+
+    <tr>
+      <td class="bact">Staphylococcus aureus</td>
+      <td><span class="gen g-meca">mecA/C · MREJ</span></td>
+      <td class="mech">MRSA · PBP2a<br>R a todos β-lactámicos<br>excepto Ceftarolina</td>
+      <td>
+        <div class="drug-1">Vancomicina 25–30mg/kg/día</div>
+        <div class="drug-2">AUC/CMI objetivo 400–600 mg·h/L<br>(No usar solo valle como PK)</div>
+        <div class="drug-2">— VAP: preferir Linezolid —</div>
+        <div class="drug-1">Linezolid 600mg c/12h</div>
+        <div class="drug-2">Mejor penetración pulmonar en VAP</div>
+      </td>
+      <td>
+        <div class="drug-2">Ceftarolina 600mg c/12h<br>(única C5G activa vs MRSA)</div>
+        <div class="drug-2">Daptomicina 8–10mg/kg/día<br>(bacteriemia, NO VAP por inactivación surfactante)</div>
+        <div class="drug-2">Tedizolid (si intolerancia Linezolid)</div>
+      </td>
+      <td><div class="drug-no">✗ β-lactámicos (excepto Ceftarolina)<br>✗ Daptomicina en VAP<br>✗ Vancomicina si CMI ≥ 2</div></td>
+      <td><span class="pill p-green">✓ Buena</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Staphylococcus aureus<br>S. epidermidis</td>
+      <td><span class="gen g-neg">Sin mecA</span></td>
+      <td class="mech">MSSA · Sensible meticilina<br>β-lactámicos de elección<br>Menor mortalidad que MRSA</td>
+      <td>
+        <div class="drug-1">Oxacilina / Nafcilina 2g c/4h</div>
+        <div class="drug-2">o Cefazolina 2g c/8h (bacteriemia)</div>
+      </td>
+      <td><div class="drug-2">Amoxicilina/Clavulanato<br>Clindamicina (si sensible)</div></td>
+      <td><div class="drug-no">✗ Vancomicina como monoterapia MSSA<br>(inferior en mortalidad a Oxacilina)</div></td>
+      <td><span class="pill p-green">✓ Óptima</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Enterococcus faecalis<br>Enterococcus faecium</td>
+      <td><span class="gen g-van">vanA/B</span></td>
+      <td class="mech">VRE · R glucopéptidos<br>vanA: alta resistencia<br>vanB: resistencia variable</td>
+      <td>
+        <div class="drug-1">Linezolid 600mg c/12h</div>
+        <div class="drug-2">o Daptomicina 8–10mg/kg/día</div>
+      </td>
+      <td>
+        <div class="drug-2">Quinupristina/Dalfopristina<br>(solo E. faecium, no E. faecalis)</div>
+        <div class="drug-2">Omadacicline (datos emergentes)</div>
+        <div class="drug-no">Tigeciclina: NO monoterapia en bacteriemia <span class="idsa-del">IDSA 2024</span></div>
+      </td>
+      <td><div class="drug-no">✗ Vancomicina<br>✗ Ampicilina<br>✗ Tigeciclina monoterapia</div></td>
+      <td><span class="pill p-yellow">⚡ Limitada</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Enterococcus faecalis<br>E. faecium</td>
+      <td><span class="gen g-neg">Sin vanA/B</span></td>
+      <td class="mech">VSE · Sensible glucopéptidos<br>E. faecalis más virulento<br>E. faecium más resistente</td>
+      <td>
+        <div class="drug-1">Ampicilina 2g c/4h IV</div>
+        <div class="drug-2">+ Ceftriaxona o Gentamicina<br>(sinergia en bacteriemia E. faecalis)</div>
+      </td>
+      <td><div class="drug-2">Vancomicina 15–20mg/kg c/8-12h<br>Linezolid (si intolerancia)</div></td>
+      <td><div class="drug-no">✗ Quinupristina/Dalfo en E. faecalis (R intrínseca)</div></td>
+      <td><span class="pill p-green">✓ Buena</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Streptococcus pneumoniae<br>Streptococcus agalactiae</td>
+      <td><span class="gen g-neg">Sin gen R</span></td>
+      <td class="mech">Generalmente sensible<br>NAC / HAP temprana<br>Raro en VAP tardía</td>
+      <td>
+        <div class="drug-1">Ceftriaxona 2g c/24h</div>
+        <div class="drug-2">o Amoxicilina/Clavulanato</div>
+      </td>
+      <td><div class="drug-2">Levofloxacino 750mg c/24h<br>Moxifloxacino 400mg c/24h</div></td>
+      <td><div class="drug-no">✗ Sobreescalar a carbapenems sin justificación</div></td>
+      <td><span class="pill p-green">✓ Buena</span></td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- TABLA 5: LEVADURAS -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="section-label">⑤ Levaduras / Hongos — BioFire Blood Culture</div>
+<div class="table-wrap">
+<table>
+  <thead><tr>
+    <th>Patógeno</th><th>Especie</th><th>1ª Línea</th><th>Alternativa / De-escalada</th><th>Medidas adicionales</th><th>Cobertura</th>
+  </tr></thead>
+  <tbody>
+
+    <tr>
+      <td class="bact">Candida spp.</td>
+      <td class="mech">C. albicans<br>C. tropicalis<br>C. parapsilosis</td>
+      <td>
+        <div class="drug-1">Anidulafungina 200mg c/24h</div>
+        <div class="drug-2">o Caspofungina 70mg → 50mg c/24h</div>
+        <div class="drug-2">o Micafungina 100mg c/24h</div>
+      </td>
+      <td>
+        <div class="drug-2">Fluconazol 400mg/día</div>
+        <div class="drug-2">Solo si: especie sensible + estable<br>+ CMI ≤ 2 + sin compromiso ocular/cardiaco</div>
+        <div class="drug-2">C. parapsilosis: CMI elevada a equinocandin.;<br>Fluconazol puede ser superior</div>
+      </td>
+      <td class="mech">① Retirar CVC si posible<br>② Fondo de ojo (endoftalmitis)<br>③ Eco si bacteriemia persistente<br>④ Hemocultivos c/48h hasta neg.<br>⑤ Duración ≥14d post-negativización</td>
+      <td><span class="pill p-green">✓ Buena</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Candida spp.</td>
+      <td class="mech">C. krusei<br>C. glabrata (Nakaseomyces)<br>C. auris</td>
+      <td>
+        <div class="drug-1">Equinocandina (de elección)</div>
+        <div class="drug-2">Anidulafungina · Caspofungina · Micafungina</div>
+        <div class="drug-no">🔴 NO Fluconazol en C. krusei (R intrínseca)</div>
+      </td>
+      <td>
+        <div class="drug-2">Voriconazol (C. krusei)<br>Anfotericina B liposomal 3–5mg/kg/día<br>Ibrexafungerp (C. auris, datos emergentes)</div>
+      </td>
+      <td class="mech">C. auris: aislamiento de contacto<br>Notificación a epidemiología<br>CMI pan-resistencia posible</td>
+      <td><span class="pill p-yellow">⚡ Específica</span></td>
+    </tr>
+
+    <tr>
+      <td class="bact">Cryptococcus<br>neoformans / gattii</td>
+      <td class="mech">Fungemia / Meningitis<br>Inmunocomprometido<br>HIV / Trasplante</td>
+      <td>
+        <div class="drug-1">Anfotericina B liposomal</div>
+        <div class="drug-2">3–4mg/kg/día + Flucitosina 25mg/kg c/6h</div>
+        <div class="drug-2">Inducción 2 semanas</div>
+      </td>
+      <td>
+        <div class="drug-2">Consolidación: Fluconazol 400mg/día 8 sem.<br>Mantenimiento: Fluconazol 200mg/día</div>
+        <div class="drug-2">PL obligatoria · Medir presión de apertura</div>
+      </td>
+      <td class="mech">PL seriada si HIC<br>Investigar puerta de entrada<br>Carga criptocócica sérica</td>
+      <td><span class="pill p-yellow">⚡ Específica</span></td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- TABLA 6: MCR-1 / COLISTINA -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="section-label">⑥ Resistencia a Colistina · gen mcr-1 (BioFire Blood Culture)</div>
+<div class="alert alert-yellow">
+  <div class="alert-icon">⚡</div>
+  <div><strong>mcr-1 detectado:</strong> Resistencia plasmídica transferible a colistina/polimixinas. NO usar Colistina ni Polimixina B como base del esquema. Opciones: <strong>Cefiderocol + segundo agente · Aztreonam/Avibactam · Fosfomicina IV en combinación</strong>. Solicitar CMI de colistina y sensibilidad completa por referencia. Notificar a infectología y epidemiología hospitalaria.</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- TABLA 7: RESUMEN 30 SEGUNDOS -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="section-label">⑦ Decisión en 30 segundos — BioFire resultado → Acción</div>
+<div class="table-wrap">
+<table>
+  <thead><tr>
+    <th>BioFire reporta</th><th>→ DAR ESTO</th><th>NO DAR ESTO</th><th>Actualización IDSA 2024</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td><span class="gen g-kpc">KPC</span> solo</td>
+      <td><div class="drug-1">Ceftazidima/Avibactam</div></td>
+      <td><div class="drug-no">Meropenem solo</div></td>
+      <td class="mech">Imipenem/Relebactam y Mero/Vaborbactam son alternativas válidas <span class="idsa-new">NUEVO</span></td>
+    </tr>
+    <tr>
+      <td><span class="gen g-ndm">NDM</span> solo</td>
+      <td><div class="drug-1">Aztreonam/Avibactam<br>o Ceftaz/Avi + Aztreonam c/8h</div></td>
+      <td><div class="drug-no">Ceftaz/Avi sola</div></td>
+      <td class="mech">Azteo/Avi aprobado FDA 2025 · Dosificación combinada simultánea c/8h <span class="idsa-mod">ACTUALIZADO</span></td>
+    </tr>
+    <tr>
+      <td><span class="gen g-vim">VIM</span> / <span class="gen g-imp">IMP</span></td>
+      <td><div class="drug-1">Aztreonam/Avibactam<br>o Ceftaz/Avi + Aztreonam c/8h</div></td>
+      <td><div class="drug-no">Ceftaz/Avi sola · Imipenem/Relebactam</div></td>
+      <td class="mech">Imipenem/Relebactam NO cubre MBL — error frecuente <span class="idsa-new">ACLARADO</span></td>
+    </tr>
+    <tr>
+      <td><span class="gen g-kpc">KPC</span> + <span class="gen g-ndm">NDM</span></td>
+      <td><div class="drug-1">Ceftaz/Avi + Aztreonam c/8h<br>o Aztreonam/Avibactam</div></td>
+      <td><div class="drug-no">Cualquier β-lactámico solo</div></td>
+      <td class="mech">Única opción que cubre ambos mecanismos simultáneamente <span class="idsa-mod">CONFIRMADO</span></td>
+    </tr>
+    <tr>
+      <td><span class="gen g-oxa">OXA-48</span> en Enterobacteria</td>
+      <td><div class="drug-1">Ceftazidima/Avibactam</div></td>
+      <td><div class="drug-no">Ertapenem · Meropenem solo</div></td>
+      <td class="mech">Mero/Vaborbactam: cobertura OXA-48 menor; verificar CMI <span class="idsa-mod">MATIZADO</span></td>
+    </tr>
+    <tr>
+      <td><span class="gen g-oxa">OXA</span> en Acinetobacter CRAB</td>
+      <td><div class="drug-1">Sulbactam/Durlobactam + Carbapenem</div></td>
+      <td><div class="drug-no">Meropenem solo · Ceftaz/Avi · Azteo/Avi · <span class="strike">Tigeciclina estándar</span></div></td>
+      <td class="mech">Sulbactam/Durlobactam = 1ª línea · Amp/Sulbactam queda como alternativa · Tigeciclina eliminada <span class="idsa-new">CAMBIADO</span></td>
+    </tr>
+    <tr>
+      <td><span class="gen g-blee">CTX-M</span> sin carbapenemasa</td>
+      <td><div class="drug-1">Meropenem o Ertapenem</div></td>
+      <td><div class="drug-no">Pip/Tazo monoterapia · C3G</div></td>
+      <td class="mech">Reservar Ceftaz/Avi para carbapenem-resistentes <span class="idsa-mod">ÉNFASIS 2024</span></td>
+    </tr>
+    <tr>
+      <td>Pseudomonas MDR sin metalo</td>
+      <td><div class="drug-1">Ceftolozane/Tazobactam</div></td>
+      <td><div class="drug-no">Meropenem solo si MDR</div></td>
+      <td class="mech">Ceftolozane/Tazo sube en jerarquía sobre Ceftaz/Avi en Pseudomonas MDR sin MBL <span class="idsa-new">CAMBIADO</span></td>
+    </tr>
+    <tr>
+      <td>Stenotrophomonas</td>
+      <td><div class="drug-1">Cefiderocol + 2° agente (1°)<br>Ceftaz/Avi + Aztreonam (2°)</div></td>
+      <td><div class="drug-no">Carbapenems · <span class="strike">TMP/SMX como monoterapia 1°</span></div></td>
+      <td class="mech">Nuevo orden de preferencia IDSA 2024: Cefiderocol primero · TMP/SMX baja a 4° lugar <span class="idsa-new">CAMBIADO</span></td>
+    </tr>
+    <tr>
+      <td><span class="gen g-meca">mecA → MRSA</span></td>
+      <td><div class="drug-1">Linezolid en VAP · Vancomicina AUC/CMI</div></td>
+      <td><div class="drug-no">β-lactámicos solos · Daptomicina en VAP · Vancomicina si CMI ≥ 2</div></td>
+      <td class="mech">Linezolid preferido en VAP por MRSA por penetración pulmonar superior <span class="idsa-mod">REFORZADO</span></td>
+    </tr>
+    <tr>
+      <td><span class="gen g-van">vanA/B → VRE</span></td>
+      <td><div class="drug-1">Linezolid · Daptomicina</div></td>
+      <td><div class="drug-no">Vancomicina · <span class="strike">Tigeciclina estándar</span></div></td>
+      <td class="mech">Tigeciclina eliminada de combinaciones estándar para VRE <span class="idsa-del">ELIMINADA</span></td>
+    </tr>
+    <tr>
+      <td><span class="gen g-mcr">mcr-1</span></td>
+      <td><div class="drug-1">Cefiderocol · Aztreonam/Avibactam</div></td>
+      <td><div class="drug-no">Colistina · Polimixina B</div></td>
+      <td class="mech">mcr-1 solo en Blood Culture Panel · Notificar epidemiología <span class="idsa-mod">CONFIRMADO</span></td>
+    </tr>
+    <tr>
+      <td><span class="gen g-neg">Sin gen de resistencia</span></td>
+      <td><div class="drug-1">Según antibiograma · Desescalar con BioFire</div></td>
+      <td><div class="drug-no">Sobreescalar empíricamente sin evidencia</div></td>
+      <td class="mech">BioFire permite desescalada segura a 24–48h sin esperar cultivo <span class="idsa-mod">ÉNFASIS 2024</span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="footer">
+  <strong style="color:var(--cyan)">Fuentes</strong><br>
+  IDSA AMR Guidance 2024 · Tamma PD et al. Clin Infect Dis 2024 · Aztreonam/Avibactam FDA Approval 2025<br>
+  ERS/ESICM/ESCMID HAP/VAP Guidelines 2017 · IDSA/ATS HAP/VAP 2016 · CLSI 2024<br>
+  BioFire FilmArray Pneumonia Panel + BCID2 Panel · Surviving Sepsis Campaign 2021<br><br>
+  <span style="color:var(--red)">Uso exclusivo como referencia clínica de apoyo</span> · Siempre correlacionar con antibiograma local, evolución clínica y disponibilidad institucional<br>
+  <span class="idsa-new">NUEVO</span> = añadido en IDSA 2024 &nbsp;·&nbsp; <span class="idsa-mod">ACTUALIZADO</span> = modificado en IDSA 2024 &nbsp;·&nbsp; <span class="idsa-del">ELIMINADO</span> = removido en IDSA 2024
+</div>
+
+</body>
+</html>
