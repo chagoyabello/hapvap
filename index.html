@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAP/VAP · Herramienta BioFire + IA</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=3cQpjHk03I2zu8MApp-03wsZ4q-AUeEKYMi568zmZ4D0xSiXZ4lsaTabTnU0XnB6LrfYKGLeke7kUIie27LC9_IxhE_KbDmrx_E6tvKPXbDkzGSysvXOv2T7AXEXdH3pe8kPe8QUZS-RciRnw-nKGhtDnkKDE94182vQxSxLmL8esD_H0Y9gbn3qkSZwENYHqOv3nsQaz8sgzZxOyNOrwJpTQqvNfdA-WNN_HMLEK_ij1ugjvoFisXg6W7gx-GYZSRv1qeLw0YXxEBRSxlKclq-zZdR7makbjmNXG6XLSRPXnc1KOJbsNVLswE4XaLdLb_EuSL_s_v3u7R6uNW4Ouk7nio0U7k6m3YLrD2VwvHxS_lk_wRWhQM1atY3bbWsnQeDYr7UoO__KJb5K50-vneFubrBMsWM0_qu1SieRjpNlgSK9R9h9FfQ7IFZP4dJnhT9ucLadOiAFhd3cNjY58CsdcJonbb7aJ8AV5WrrHSN7NDH-e82R--KXGDMnut5TZZAd6Pb2p5jZDkn8VMGMRPDLEVGcE0173r9CCbtqyoMQFYgdNtTjD2EE1YeWe24rxI3Ylq9SmXtY_tN30NwPMHbJtYp707j1JEm6NXGn83muyzX1fmks9jtvefEKCxLlo_65A6wk7J1PnVytCKOHnDpdsNRwZHvduM3_vCoIw5pndDzSOni7FQkJXZcssftmcISsSZOE8O-AQv2i1onmuE1_il3jf9wh45sfMx5vInTxuW4Na1jLxOVUwV1PxvejSypzdWLk49vsIXddwaM-OlakM6vJXVQBnNWOTNWlfrBArgwxv7lkCq1sz0AGSwBPOmB20K09Vy_40-tUBYhqx0Hz5UEo-BGxu9KFQHw8U7AqiVdx_BR1Xu-J6IvqcOdssluiAiHNqPrhCAxcD8sWDW5Zby_WRWpx3HtjEfXHiHX3frl9v3l-dBpMUZC3NlaZvmOSMcpcM_nlS_CaT9kDEabeH1-Pwm52qQRF1Rai9xL2pQ054UCwv5NVdjWM1lteNKpmwMyO3uyyDBt6y6EszYFG0qYoQkz_VH6CVspFblACIU8SI6biXgrAAKK3oH554vXup0JWcOO0PxN-LS-4B3fuuv4eS7skp5Q1dNWb2bGS9zxy9aDHbXz38SFoAdgWaA6-dfS7ODMiSYjPsRC5Ujjgfp6JTEZ7z8hkBC58ZyfIpZDmTJZrQQxFFy0hr8Io2gzKt3qtKBd-yixvVz8i4FeIyYSc3HMKeBwFG-r5uslZ9gr-dHfIUPtMK2E7XhViw2W_uIjT3Pqh45w8InRG6BOlJLRgPmQkHaiPbk5ulNt5Dlr_4lkIVoISFiBqvT1cApuJ0qSkiOu-ImZVx38N43XCrbHrWicAIlYoT0s_CNVGwEkkgY_BNDbSBKsq9Bd3zxVGqvK_nqhtSRmxHIp2Szx-wZ8b4VECYisrWz2BF2xI-zl6KwH3ld8T6PhskFhy5jK9MMCJleei0c8KmO3mQz8_Tq83H7-xNVQHCHpH9u-NV3DUnAYtFyhB8FL_h9HT6tqbVuFvNPwEhyUgN5kkKWs0tnf2rTsj3hYs7x_e4ELOIUO0ciUpGclIVQg91uUd7uI4_K4gtfZBwPS8wY2cpMV5yKypvHtoVHm1CQCEIzvc0HvhD6f7yukIyM96WX1X" nonce="ea7ab3fd3b3f928905ff41f6dd072698" charset="UTF-8"></script><style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+            margin-bottom: 10px;
+        }
+        .version {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-top: 15px;
+        }
+        .content {
+            padding: 50px 40px;
+        }
+        .tools {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        .tool {
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+        .tool:hover {
+            border-color: #1e40af;
+            background: #f0f9ff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(30, 64, 175, 0.1);
+        }
+        .tool h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #1e40af;
+        }
+        .tool p {
+            font-size: 0.95em;
+            color: #666;
+            line-height: 1.5;
+        }
+        .tool-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        .info-box {
+            background: #f0f9ff;
+            border-left: 4px solid #1e40af;
+            padding: 25px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+        .info-box h3 {
+            color: #1e40af;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .info-box p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        .info-box ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        .info-box li {
+            color: #555;
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .info-box li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #16a34a;
+            font-weight: bold;
+        }
+        .button-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+            color: white;
+        }
+        .btn-primary:hover {
+            box-shadow: 0 10px 25px rgba(30, 64, 175, 0.3);
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: white;
+            color: #1e40af;
+            border: 2px solid #1e40af;
+        }
+        .btn-secondary:hover {
+            background: #f0f9ff;
+        }
+        .footer {
+            background: #f9fafb;
+            padding: 30px 40px;
+            text-align: center;
+            border-top: 1px solid #e5e7eb;
+            color: #666;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .tools {
+                grid-template-columns: 1fr;
+            }
+            .content {
+                padding: 30px 20px;
+            }
+            .header {
+                padding: 40px 20px;
+            }
+            .button-group {
+                flex-direction: column;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>HAP/VAP · BioFire + IA</h1>
+            <p>Herramienta clínica interactiva para la selección de antibióticos</p>
+            <p>basada en PCR FilmArray y soporte de inteligencia artificial</p>
+            <div class="version">v.I Jun2026</div>
+        </div>
+
+        <div class="content">
+            <div class="info-box">
+                <h3>📋 Sobre esta herramienta</h3>
+                <p>Aplicación gratuita desarrollada por <strong>Dr. Juan Carlos Chagoya Bello</strong> para facilitar la toma de decisiones clínicas en pacientes con neumonía nosocomial (HAP/VAP).</p>
+                <p>Integra los resultados de PCR BioFire FilmArray con directrices IDSA AMR 2024 y soporte de IA para la selección optimizada de antibióticos.</p>
+            </div>
+
+            <div style="margin-bottom: 40px;">
+                <h2 style="text-align: center; margin-bottom: 30px; color: #1e40af; font-size: 1.8em;">Herramientas disponibles</h2>
+                <div class="tools">
+                    <a href="HAP_VAP_Movil_I_Jun2026.html" class="tool">
+                        <div class="tool-icon">📱</div>
+                        <h3>Versión Móvil</h3>
+                        <p>Interfaz optimizada para teléfono. Acceso rápido a los algoritmos.</p>
+                    </a>
+                    <a href="Flujograma_SVG_I_Jun2026.html" class="tool">
+                        <div class="tool-icon">🌳</div>
+                        <h3>Flujograma</h3>
+                        <p>Árbol de decisión interactivo. Bacteria → Gen → Antibiótico.</p>
+                    </a>
+                    <a href="Tabla_Antibioticos_I_Jun2026.html" class="tool">
+                        <div class="tool-icon">📊</div>
+                        <h3>Tabla Completa</h3>
+                        <p>Referencia maestra. Todos los casos y antibióticos.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>🎯 Características principales</h3>
+                <ul>
+                    <li><strong>Sin registro requerido</strong> — acceso inmediato</li>
+                    <li><strong>Sin conexión a internet</strong> — funciona offline tras descargar</li>
+                    <li><strong>Compatible con cualquier navegador</strong> — móvil, tablet, computadora</li>
+                    <li><strong>Basado en evidencia clínica</strong> — IDSA AMR 2024, FDA 2025</li>
+                    <li><strong>Soporte IA integrado</strong> — recomendaciones automatizadas</li>
+                    <li><strong>Libre de costo</strong> — contribución a la medicina comunitaria</li>
+                </ul>
+            </div>
+
+            <div class="button-group">
+                <a href="HAP_VAP_Movil_I_Jun2026.html" class="btn btn-primary">Abrir herramienta</a>
+                
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>Taller BioFire + IA en Neumonía Nosocomial</strong></p>
+            <p>Miércoles 10 de Junio 2026 · Restaurante La Mansión Satélite</p>
+            <p style="margin-top: 15px; color: #999;">Herramienta desarrollada por Dr. Juan Carlos Chagoya Bello · Neumología · Hospital Satélite</p>
+            <p style="margin-top: 10px; font-size: 0.85em;">chagoyabello.github.io/hapvap</p>
+        </div>
+    </div>
+</body>
+</html>
